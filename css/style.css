@@ -2,6 +2,65 @@
  *Import all Fonts
  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/*
+ *Reset margin-padding
+ 
+ */
+* {
+	margin: 0;
+	padding: 0;
+}
+/*
+ *common styles
+ */
 body {
 	font-family: "Poppins", sans-serif;
+	background-color: #f3f1ff;
 }
+.container {
+	width: 870px;
+	background-color: #fff;
+	padding: 30px;
+	margin-top: 30px;
+	border-radius: 5px;
+}
+main {
+	display: flex;
+	justify-content: center;
+}
+hr {
+	border: 1px solid #d1d1d1;
+}
+/*
+ *Start player section stylesheet
+ */
+.top-player {
+	margin-bottom: 30px;
+}
+.section-title {
+	font-weight: 500;
+	font-size: 24px;
+	color: #562eff;
+	margin-bottom: 30px;
+}
+.players {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-row-gap: 30px;
+}
+.player {
+	display: flex;
+	align-items: center;
+}
+.player img {
+	width: 56px;
+	height: 56px;
+	margin-right: 16px;
+}
+.player-name {
+	font-size: 18px;
+	font-weight: 500;
+}
+/*
+ *End player section stylesheet
+ */
